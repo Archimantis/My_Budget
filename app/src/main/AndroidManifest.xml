@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBudget"
         tools:targetApi="31">
+
+<!--        android:label="XXX"-->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="XXX"
             android:theme="@style/Theme.MyBudget.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,5 +25,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

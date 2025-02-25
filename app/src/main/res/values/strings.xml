@@ -1,13 +1,46 @@
 <resources>
     <string name="app_name">My Budget</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title">My Budget</string>
+    <string name="nav_header_subtitle" translatable="false">AlMa Sistemas</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="DatabaseName" translatable="false">MyBudgetDB</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="menu_entries">Entries</string>
+    <string name="menu_accounts">Accounts</string>
+    <string name="menu_budget">Budget</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Logo_contentDescription" translatable="false">App Logo</string>
+
+
+    <string name="House_rent" translatable="true">House rent</string>
+    <string name="Housing" translatable="true">Housing</string>
+
+
+    <string name="biometric_login_for_my_app" translatable="true">Biometric login for my app</string>
+    <string name="log_in_using_your_biometric_credential" translatable="true">Log in using your biometric credential</string>
+    <string name="msg_authentication_error" translatable="true">"Authentication error: "</string>
+    <string name="msg_authentication_succeeded" translatable="true">Authentication succeeded.</string>
+    <string name="msg_authentication_failed">Authentication failed!</string>
+    <string name="msg_biometric_success" translatable="false">App can authenticate using biometrics.</string>
+    <string name="msg_biometric_error_hw_unavailable" translatable="false">Biometric features are currently unavailable.</string>
+    <string name="msg_biometric_error_no_hardware" translatable="false">No Biometric features available int this device.</string>
+    <string name="msg_biometric_error_none_enrolled" translatable="false">Need register at least one fingerprint.</string>
+    <string name="msg_biometric_error_security_update_required" translatable="false">Security update required.</string>
+    <string name="msg_biometric_error_unsupported" translatable="false">Error unsupported.</string>
+    <string name="msg_biometric_status_unknown" translatable="false">Status Unknown.</string>
+    <string name="msg_unknown_cause" translatable="false">Unknown cause.</string>
+    <string name="msg_biometric_login" translatable="false">Biometric login</string>
+    <string name="msg_biometric_how_to" translatable="false">Login using your biometric credential.</string>
+    <string name="msg_use_account_password" translatable="false">Use account password</string>
 </resources>

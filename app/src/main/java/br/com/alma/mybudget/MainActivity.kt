@@ -11,14 +11,25 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import br.com.alma.mybudget.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : AppCompatActivity() {
-
+    private var isDataLoaded = false
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
+
         super.onCreate(savedInstanceState)
+        splashScreen.setKeepOnScreenCondition { !isDataLoaded }
+
+        // Simula a carga de dados (abertura do banco será feita neste ponto)
+        Thread {
+            Thread.sleep(5000) // Simulate 5 seconds of data loading
+
+            isDataLoaded = true
+        }.start()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

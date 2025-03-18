@@ -16,7 +16,7 @@ interface ClasseDetalheDAO {
     fun delete(classeDetalhe: ClasseDetalhe?)
 
     @Query("delete from ClasseDetalhe")
-    fun deleteAll()
+    fun deleteAll(carregaClasses: Unit)
 
     @Query("select * from ClasseDetalhe where uid = :uid")
     fun getClasseDetalhe(uid: Int): ClasseDetalhe?

@@ -31,5 +31,5 @@ interface ValorDAO {
     fun getValoresDeUmaMoeda(moedaUID: Int): List<Valor?>?
 
     @get:Query("select * from Valor")
-    val allValores: List<Any?>?
+    val allValores: List<Valor?>?
 }

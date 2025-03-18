@@ -20,7 +20,7 @@ class LocalizacaoRepository internal constructor(application: Application?) {
         if (appDatabase != null) {
             localizacaoDAO = appDatabase.localizacaoDAO()!!
             todasAsLocalizacoes =
-                MutableLiveData<List<Localizacao>>(this.localizacaoDAO!!.getAllLocalizacoes() as List<Localizacao>?)
+                MutableLiveData<List<Localizacao>>(this.localizacaoDAO!!.getAllLocalizacoes() )
         }
     }
 

@@ -22,5 +22,5 @@ interface ClasseGeralDAO {
     fun getClasseGeral(uid: Int): ClasseGeral?
 
     @get:Query("select * from ClasseGeral")
-    val allClassesGerais: List<Any?>?
+    val allClassesGerais: List<ClasseGeral>?
 }

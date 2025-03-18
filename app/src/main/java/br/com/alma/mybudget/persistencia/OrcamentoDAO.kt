@@ -22,6 +22,6 @@ interface OrcamentoDAO {
     fun getOrcamento(uid: Int): Orcamento?
 
     @get:Query("select * from Orcamento")
-    val allOrcamentos: List<Any?>?
+    val allOrcamentos: List<Orcamento?>?
 }
 

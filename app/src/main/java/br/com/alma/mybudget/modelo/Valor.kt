@@ -24,6 +24,6 @@ class Valor(
     var valor: Double,
     var lancamentoUID: Int,
     var classeDetalheUID: Int,
-    var moedaUID: Int,
-    var elementoOrcamentarioUID: Int
+    var moedaUID: Int?,
+    var elementoOrcamentarioUID: Int?
 )

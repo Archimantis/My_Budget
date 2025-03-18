@@ -25,7 +25,7 @@ interface LocalizacaoDAO {
     fun getLocalizacoesDeUmSujeito(sujeitoUID: Int): List<Localizacao?>?
 
     @Query("select * from Localizacao")
-    fun getAllLocalizacoes(): List<Localizacao?>?
+    fun getAllLocalizacoes(): List<Localizacao>?
 
     @Query("select uid from Localizacao where ((latitude - :latitude) * (latitude - :latitude)) + ((longitude - :longitude) * (longitude - :longitude)) < 0.00003 limit 1")
     fun findSujeitoMaisProximo(latitude: Double, longitude: Double): Int

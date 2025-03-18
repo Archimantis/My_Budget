@@ -39,7 +39,8 @@ import br.com.alma.mybudget.modelo.Valor
     version = 1,
     exportSchema = false
 )
-@TypeConverters(*[Conversores::class])
+
+@TypeConverters(Conversores::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun localizacaoDAO(): LocalizacaoDAO?
 

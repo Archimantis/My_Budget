@@ -22,5 +22,5 @@ interface TipoContaDAO {
     fun getTipoConta(uid: Int): TipoConta?
 
     @get:Query("select * from TipoConta")
-    val allTipoContas: List<Any?>?
+    val allTipoContas: List<TipoConta?>?
 }

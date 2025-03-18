@@ -22,6 +22,6 @@ interface ElementoOrcamentarioDAO {
     fun getElementoOrcamentario(uid: Int): ElementoOrcamentario?
 
     @get:Query("select * from ElementoOrcamentario")
-    val allElementosOrcamentarios: List<Any?>?
+    val allElementosOrcamentarios: List<ElementoOrcamentario?>?
 }
 

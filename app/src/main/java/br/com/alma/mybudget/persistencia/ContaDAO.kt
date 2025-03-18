@@ -22,5 +22,5 @@ interface ContaDAO {
     fun getConta(uid: Int): Conta?
 
     @get:Query("select * from Conta")
-    val allConta: List<Any?>?
+    val allConta: List<Conta?>?
 }

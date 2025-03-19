@@ -67,6 +67,8 @@ dependencies {
     implementation(libs.core.ktx)
     testImplementation(libs.junit)
     testImplementation(libs.testng)
+    testImplementation(libs.jupiter.junit.jupiter)
+    testImplementation(libs.jupiter.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.junit.jupiter)
@@ -75,4 +77,5 @@ dependencies {
     testRuntimeOnly(libs.junit.jupiter.engine)
     testImplementation(libs.junit.jupiter.params)
     testRuntimeOnly(libs.junit.platform.launcher)
+    testImplementation(kotlin("test"))
 }

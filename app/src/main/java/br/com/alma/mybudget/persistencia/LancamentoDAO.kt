@@ -27,6 +27,6 @@ interface LancamentoDAO {
     @Query("select * from Lancamento where sujeitoUID = :sujeitoUID")
     fun getLancamentosDeUmSujeito(sujeitoUID: Int): List<Lancamento?>?
 
-    @get:Query("select * from Lancamento")
-    val allLancamentos: List<Any?>?
+    @Query("select * from Lancamento")
+    fun getAllLancamentos(): List<Lancamento?>?
 }

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt") // Required for Room
 }
 
 android {
@@ -63,11 +64,16 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.core.splashscreen)
+    implementation(libs.core.ktx)
+
+    //Room
     implementation(libs.androidx.room.common)
     implementation(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
-    implementation(libs.core.ktx)
-    testImplementation(libs.junit)
+    implementation(libs.androidx.room.runtime)
+
+    // jUnit4
+    testImplementation(libs.junit.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

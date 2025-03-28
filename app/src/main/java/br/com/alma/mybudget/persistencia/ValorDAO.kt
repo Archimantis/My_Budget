@@ -30,6 +30,6 @@ interface ValorDAO {
     @Query("select * from Valor where moedaUID = :moedaUID")
     fun getValoresDeUmaMoeda(moedaUID: Int): List<Valor?>?
 
-    @get:Query("select * from Valor")
-    val allValores: List<Valor?>?
+    @Query("select * from Valor")
+    fun getAllValores(): List<Valor?>?
 }

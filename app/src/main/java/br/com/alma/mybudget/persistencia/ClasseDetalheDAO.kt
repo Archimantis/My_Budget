@@ -21,8 +21,8 @@ interface ClasseDetalheDAO {
     @Query("select * from ClasseDetalhe where uid = :uid")
     fun getClasseDetalhe(uid: Int): ClasseDetalhe?
 
-    @get:Query("select * from ClasseDetalhe")
-    val allClassesDetalhe: List<Any?>?
+    @Query("select * from ClasseDetalhe")
+    fun getAllClasseDetalhe(): List<ClasseDetalhe?>?
 
     @Query("select * from ClasseDetalhe where classeGeralUID = :classeGeralUID")
     fun getClassesDetalheDeUmaClasseGeral(classeGeralUID: Int): List<ClasseDetalhe?>?
